@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" type="text/css" href="modal.css">
+<a href="#openModal">Open Modal</a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Modal Box</h2>
+ <style>
+                        #preview {
+                            border-color: Black;
+                            border-width:1px;
+                            border-style: solid;
+                            height: 200px;
+                            width: 200px;
+							position: right;
+                        }
+                    </style>
+                    <script type="text/javascript" src="../Instascan/js/instascan.min.js"></script>
+                    <center><video id="preview"></video></center><br/>
+                    <script type="text/javascript">
+                        let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+                        scanner.addListener('scan', function (content) {
+                            console.log(content);
+                            document.getElementById("resultCode").value = content;
+                        });
+                        Instascan.Camera.getCameras().then(function (cameras) {
+                            if (cameras.length > 0) {
+                                scanner.start(cameras[0]);
+                            } else {
+                                console.error('No camera found.');
+                                alert("No camera found.");
+                            }
+                        }).catch(function (err) {
+                            console.error(err);
+                        });
+        
+    </div>
+</div>
+</head>
+</html>

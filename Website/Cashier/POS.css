@@ -1,0 +1,278 @@
+body {
+  background: #F0F4F9;
+}
+
+.page-title {
+  color: #17a2b8;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+.content-area {
+  margin-top: 20px;
+  padding: 20px;
+  border-color: #149077;
+  margin-bottom: 22px;
+  background-color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Table */
+.table thead,
+.table tbody {
+  font-size: 14px;
+}
+
+.table tbody td {
+  padding: 6px !important;
+  line-height: 1.3 !important;
+}
+
+/*.table-striped>tbody>tr:nth-of-type(odd){*/
+/*background-color:#1ABB9C !important;*/
+/*}*/
+.table button a {
+  font-size: 13px;
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.panel {
+  border-radius: 2px;
+  border: 0;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+
+/* End of Form */
+/* End of Bootstrap SelectPicker */
+.jGrowl-notification {
+  background-color: #DD3688 !important;
+  font-family: inherit !important;
+}
+
+.void-invoice {
+  background-color: #f2dede !important;
+  color: #a94442;
+}
+
+.widget {
+  min-height: 310px;
+  padding: 18px;
+  border-color: #149077;
+  margin-bottom: 22px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #73AD46 transparent transparent #73AD46;
+  float: left;
+  position: absolute;
+  border-radius: 5px 0 0 0;
+}
+
+/* Auto Complete */
+.ng-isolate-scope li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ng-isolate-scope li:hover {
+  background-color: #e0e0e0;
+}
+
+.ng-isolate-scope li a {
+  padding: 10px;
+  color: #E33062;
+  text-decoration: none;
+}
+
+.ng-isolate-scope .active {
+  background-color: #fff;
+}
+
+.custom-select {
+  padding: 0 0 3px 3px !important;
+}
+
+.btn {
+  cursor: pointer !important;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#top-bar {
+  background-color: #fff;
+  height: 50px;
+  border-radius: 2px;
+  border: 0;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15%;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  font-size: 13px;
+  min-width: 250px;
+  max-width: 250px;
+  background: #002837;
+  color: #fff;
+  transition: all 0.3s;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #002837;
+}
+#sidebar ul.components {
+  padding: 2px 0;
+  border-bottom: 1px solid #3973ac;
+}
+#sidebar ul.components .fa {
+  margin-right: 10px;
+}
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #fff;
+  background: #538cc6;
+}
+#sidebar ul li.active > a, #sidebar a[aria-expanded="true"] {
+  color: #fff;
+  background: #3973ac;
+}
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+}
+#sidebar a[aria-expanded="false"]::before, #sidebar a[aria-expanded="true"]::before {
+  content: '\f0d7';
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: 'FontAwesome';
+  font-size: 0.6em;
+}
+#sidebar a[aria-expanded="true"]::before {
+  content: '\f0d8';
+}
+#sidebar ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #002837;
+}
+#sidebar ul.CTAs {
+  padding: 20px;
+}
+#sidebar ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#sidebar a.download {
+  background: #fff;
+  color: #002837;
+}
+#sidebar a.article, #sidebar a.article:hover {
+  background: #002837 !important;
+  color: #fff !important;
+}
+
+.bottom-toolbar {
+  border-top: 1px solid #ededed;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.table td {
+  vertical-align: middle   !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  min-height: 100vh;
+  transition: all 0.3s;
+  width: 100% !important;
+}
+
+#sidebarCollapse {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+  }
+
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
