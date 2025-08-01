@@ -1,1 +1,0 @@
-# Monograph-Store-QR-Code-Scanner
